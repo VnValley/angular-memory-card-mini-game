@@ -12,15 +12,42 @@
             margin: 10px;
         }
         .card.flipped {background: red}
-        .card.archived{background: blue}
+        .card.card-1.flipped {background-color: aqua}
+        .card.card-2.flipped {background-color: brown}
+        .card.card-3.flipped {background-color: #a7ffd5
+        }
+        .card.card-4.flipped {background-color: darkorange}
+        .card.card-5.flipped {background-color: olive}
+        .card.card-6.flipped {background-color: fuchsia}
+        .card.card-7.flipped {background-color: yellow}
+        .card.card-8.flipped {background-color: cornflowerblue}
+        .card.card-9.flipped {background-color: darkslategray}
+        .card.card-10.flipped {background-color: #e9a8e0
+        }
+        .card.card-11.flipped {background-color: #91b8ff
+        }
+        .card.card-12.flipped {background-color: #32ca00
+        }
+        .card.card-13.flipped {background-color: #118275
+        }
+        .card.card-14.flipped {background-color: #64004a
+        }
+        .card.card-15.flipped {background-color: #0c1664
+        }
+        .card.card-16.flipped {background-color: #645541
+        }
+        .card.card-17.flipped {background-color: #641963
+        }
+        .card.card-18.flipped {background-color: darkgreen}
+
+        .card.archived{border:#000 1px solid; margin: 9px;}
         .clearfix {clear: both}
+        .game-view {width: 420px; margin: auto}
     </style>
 </head>
 <body ng-app="app">
-<div ng-controller="GameCtrl">
-    <div class="card" ng-repeat="card in cards" ng-class="{'flipped': card.flipped, 'archived': card.archived}" ng-click="clickCard(card)">
-        <b>{{card.identity}}</b>
-    </div>
+<div ng-controller="GameCtrl" class="game-view">
+    <div ng-repeat="card in cards" class="card card-{{card.identity}}" ng-class="{'flipped': card.flipped, 'archived': card.archived}" ng-click="clickCard(card)">{{card.identity}}</div>
     <div class="clearfix"></div>
 </div>
 
