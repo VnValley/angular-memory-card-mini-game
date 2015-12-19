@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Card Game</title>
+    <style>
+        .card {
+            width: 50px;
+            height: 50px;
+            background: gray;
+            float: left;
+            margin: 10px;
+        }
+        .card.flipped {background: red}
+        .card.archived{background: blue}
+        .clearfix {clear: both}
+    </style>
+</head>
+<body ng-app="app">
+<div ng-controller="GameCtrl">
+    <div class="card" ng-repeat="card in cards" ng-class="{'flipped': card.flipped, 'archived': card.archived}" ng-click="clickCard(card)">
+        <b>{{card.identity}}</b>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="source/game-engine/index.js"></script>
+<script src="source/app.js"></script>
+</body>
+</html>
