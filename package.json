@@ -1,0 +1,23 @@
+{
+  "name": "angular-memory-card-mini-game",
+  "version": "1.0.0",
+  "description": "Memory Card Mini Game With AngularJS",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VnValley/angular-memory-card-mini-game.git"
+  },
+  "author": "VnValley, Co <contact@vnvalley.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VnValley/angular-memory-card-mini-game/issues"
+  },
+  "homepage": "https://github.com/VnValley/angular-memory-card-mini-game#readme",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1"
+  }
+}

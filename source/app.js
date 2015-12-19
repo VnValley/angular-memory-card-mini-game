@@ -1,4 +1,4 @@
-angular.module('app', ['engine']).controller('GameCtrl', function ($scope, $game) {
+angular.module('app', ['engine']).controller('GameCtrl', ['$scope', '$game', function ($scope, $game) {
 
     $game.initialize();
 
@@ -10,4 +10,4 @@ angular.module('app', ['engine']).controller('GameCtrl', function ($scope, $game
     $scope.$on('game.win', function () {
         alert('Congratulation! You\'ve found awesome developers :)');
     })
-});
+}]);

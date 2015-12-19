@@ -1,4 +1,8 @@
 angular.module('engine').service('$cardGenerator', ['Card', function (Card) {
+
+    /**
+     * Generate pairs of card that has the same identities, then shuffle them.
+     */
     return function (numberOfCard) {
         // A pair of card should has same identity
         var identity = 0;

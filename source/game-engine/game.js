@@ -7,7 +7,7 @@ angular.module('engine').service('$game', ['$rootScope', '$cardGenerator', '$tur
 
     this.initialize = function () {
         // Generate cards
-        this.cards = $cardGenerator(4);
+        this.cards = $cardGenerator(36);
         return this;
     };
 

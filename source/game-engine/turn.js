@@ -1,7 +1,7 @@
 /**
  * Represent a `pick` turn
  */
-angular.module.service('$turn', ['$timeout', function ($timeout) {
+angular.module('engine').service('$turn', ['$timeout', function ($timeout) {
     this.cards = [];
 
     /**
